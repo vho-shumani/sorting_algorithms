@@ -36,7 +36,7 @@ void shell_sort(int *array, size_t size)
 			{
 				swap(array, x, i);
 				j = x;
-				while (array[j - k] > array[j])
+				while (array[j - k] > array[j] && j - k > 0)
 				{
 					swap(array, j - k, j);
 					j--;
